@@ -17,7 +17,7 @@ const connect = function () {
 
   conn.on("connect", ()=>{
 
-    // conn.write("Move: left");
+    conn.write("Move: left");
 
   });
 
@@ -28,8 +28,6 @@ const connect = function () {
   return conn;
 };
 
-console.log("Connecting ...");
-connect();
 
 module.exports = connect;
 
