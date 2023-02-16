@@ -15,11 +15,7 @@ const connect = function () {
     conn.write("Name: SHA");
   });
 
-  conn.on("connect", ()=>{
 
-    conn.write("Move: left");
-
-  });
 
   conn.on("data",(incomingMessage)=>{
     console.log(`Server says: ${incomingMessage}`);
